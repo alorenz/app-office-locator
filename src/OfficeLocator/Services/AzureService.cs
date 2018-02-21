@@ -36,7 +36,7 @@ namespace OfficeLocator.Services
                 return;
 
 
-            var appUrl = "https://my-office-locator.azurewebsites.net";
+            var appUrl = "https://alorenzol.azurewebsites.net";
 
 #if AUTH
             Client = new MobileServiceClient(appUrl, new AuthHandler());
@@ -161,21 +161,21 @@ namespace OfficeLocator.Services
 
             await Initialize();
 
-//            var provider = MobileServiceAuthenticationProvider.Twitter;
-//            var uriScheme = "coffeecups";
+            //            var provider = MobileServiceAuthenticationProvider.Twitter;
+            //            var uriScheme = "coffeecups";
 
 
-//#if __ANDROID__
-//            var user = await Client.LoginAsync(Forms.Context, provider, uriScheme);
+            //#if __ANDROID__
+            //            var user = await Client.LoginAsync(Forms.Context, provider, uriScheme);
 
-//#elif __IOS__
-//            OfficeLocator.iOS.AppDelegate.ResumeWithURL = url => url.Scheme == uriScheme && Client.ResumeWithURL(url);
-//            var user = await Client.LoginAsync(GetController(), provider, uriScheme);
+            //#elif __IOS__
+            //            OfficeLocator.iOS.AppDelegate.ResumeWithURL = url => url.Scheme == uriScheme && Client.ResumeWithURL(url);
+            //            var user = await Client.LoginAsync(GetController(), provider, uriScheme);
 
-//#else
-//            var user = await Client.LoginAsync(provider, uriScheme);
-            
-//#endif
+            //#else
+            //            var user = await Client.LoginAsync(provider, uriScheme);
+
+            //#endif
             //if (user == null)
             //{
             //    Settings.AuthToken = string.Empty;
